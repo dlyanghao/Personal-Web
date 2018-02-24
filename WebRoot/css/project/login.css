@@ -1,0 +1,128 @@
+/*
+使用绝对布局,让烟花效置于上方
+*/
+.absolute{
+		position:absolute;
+}
+/*
+页脚样式
+*/
+.mastfoot {
+    position: fixed;
+    bottom: 0px;
+}
+.inner {
+    padding: 30px;
+    font-size:20;
+}
+
+/*
+登录页面的表格样式
+*/
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color:#00FFFF;
+}
+
+/*
+ * 文字垂直居中
+ */
+.text-center-vertical{
+	width:100%;
+	height: 100%;
+	color: red;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/*
+	字母翻转logo样式
+*/
+.char-reverse {
+	color: #E3E8DC;
+	font-weight: 900;
+	text-transform: uppercase;
+	overflow: hidden;
+	padding: 10px 0;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.char-reverse:hover {
+	color: #1e1a1b;
+}
+
+.char-reverse::after {
+	background: #ACD07A;
+	-webkit-transform: translate3d(-300%,0,0) scale3d(0,1,1);
+	transform: translate3d(-300%,0,0) scale3d(0,1,1);
+}
+
+.char-reverse:hover::before {
+	-webkit-transform: translate3d(300%,0,0) scale3d(0,1,1);
+	transform: translate3d(300%,0,0) scale3d(0,1,1);
+}
+
+.char-reverse:hover::after {
+	-webkit-transform: translate3d(0,0,0) scale3d(1,1,1);
+	transform: translate3d(0,0,0) scale3d(1,1,1);
+}
+
+.char-reverse span {
+	color: #E3E8DC;
+	display: inline-block;
+	position: relative;
+	-webkit-transform: perspective(1000px) rotate3d(0,1,0,0deg);
+	transform: perspective(1000px) rotate3d(0,1,0,0deg);
+	-webkit-transition: -webkit-transform 0.5s, color 0.5s;
+	transition: transform 0.5s, color 0.5s;
+	-webkit-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+	transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+}
+
+.char-reverse:hover span {
+	color: #fff;
+	-webkit-transform: perspective(1000px) rotate3d(0,1,0,180deg);
+	transform: perspective(1000px) rotate3d(0,1,0,180deg);
+}
+
+.logofont {
+	font-size: 200px;
+	outline: none;
+	color: #dd3e62;
+	text-decoration: none;
+}
+
+body {
+	/* color: #1e1a1b; */
+	/* font-weight: 500; */
+	/* font-size: 1em; */
+	font-family: 'Raleway', Arial, sans-serif;
+	/* -webkit-font-smoothing: antialiased; */
+	-moz-osx-font-smoothing: grayscale;
+}
+
